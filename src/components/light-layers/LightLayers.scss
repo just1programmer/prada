@@ -1,0 +1,51 @@
+@import '../../assets/scss/typography.scss';
+@import '../../assets/scss/colors.scss';
+
+.light-layers{
+    // grid pentru mobile responsiveness poate ? 
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    
+    .light-layers_cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: $open-sans;
+
+        h3{
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+
+        p{
+            margin-top: .5rem;
+            font-size: 16px;
+        }
+        
+        .light-layers_button{
+                font-family: $open-sans;
+                background-color: transparent;
+                padding: 2rem 6rem;
+                margin-top: 2rem;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                transition: .5s all ease-in;
+                cursor: pointer;
+
+                &:hover{
+                    background-color:$black;
+                    color: $white;
+                
+                }
+        }
+    }
+
+    .light-layers_teaser-image{
+      width: 100%;
+    }
+    
+}
